@@ -1,4 +1,4 @@
-class Car: 
+class Vehicle: 
     """Jednoduchá pokus o reprezentaci auta"""
 
     def __init__(self, make, model, year):
@@ -13,5 +13,13 @@ class Car:
         return long_name.title()
 
 
-my_car = Car("BMW","E30","1991")
+class ElectricCar(Vehicle):
+    """represent aspects of car secifi to eletric vehicles"""
+    pass
+
+class Bus(Vehicle):
+    pass
+
+
+my_car = Bus("BMW","E30","1991")
 print(f"{my_car.get_descriptive_name()} is my favorite car.")
